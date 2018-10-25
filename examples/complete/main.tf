@@ -2,10 +2,17 @@
 #
 # https://www.terraform.io/docs/configuration/modules.html
 
+module "s3_access_log" {
+  source = "git::https://github.com/tmknom/terraform-aws-s3-access-log.git?ref=tags/v1.1.0"
+  name   = "s3-access-log"
+
+  force_destroy = true
+}
+
 module "s3_cloudtrail" {
   source                = "../../"
   name                  = "s3-cloudtrail"
-  logging_target_bucket = "s3-access-log"
+  logging_target_bucket = "${module.s3_access_log.s3_bucket_id}"
 
   versioning_enabled = false
   force_destroy      = true

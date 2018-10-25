@@ -27,4 +27,18 @@ resource "aws_s3_bucket" "default" {
   versioning {
     enabled = "${var.versioning_enabled}"
   }
+
+  # S3 encrypts your data at the object level as it writes it to disks in its data centers
+  # and decrypts it for you when you access it.
+  # https://docs.aws.amazon.com/AmazonS3/latest/dev/serv-side-encryption.html
+  server_side_encryption_configuration {
+    rule {
+      apply_server_side_encryption_by_default {
+        # The objects are encrypted using server-side encryption with either
+        # Amazon S3-managed keys (SSE-S3) or AWS KMS-managed keys (SSE-KMS).
+        # https://docs.aws.amazon.com/AmazonS3/latest/dev/bucket-encryption.html
+        sse_algorithm = "AES256"
+      }
+    }
+  }
 }

@@ -1,6 +1,6 @@
 # terraform-aws-s3-cloudtrail
 
-Terraform module template following [Standard Module Structure](https://www.terraform.io/docs/modules/create.html#standard-module-structure).
+Terraform module which creates S3 Bucket resources for CloudTrail on AWS.
 
 ## Usage
 

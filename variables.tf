@@ -54,3 +54,9 @@ variable "noncurrent_version_expiration_days" {
   type        = "string"
   description = "Specifies when noncurrent object versions expire."
 }
+
+variable "force_destroy" {
+  default     = false
+  type        = "string"
+  description = "A boolean that indicates all objects should be deleted from the bucket so that the bucket can be destroyed without error."
+}

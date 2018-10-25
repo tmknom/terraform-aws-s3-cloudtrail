@@ -90,4 +90,7 @@ resource "aws_s3_bucket" "default" {
   # These objects are not recoverable.
   # https://www.terraform.io/docs/providers/aws/r/s3_bucket.html#force_destroy
   force_destroy = "${var.force_destroy}"
+
+  # A mapping of tags to assign to the bucket.
+  tags = "${var.tags}"
 }

@@ -60,3 +60,9 @@ variable "force_destroy" {
   type        = "string"
   description = "A boolean that indicates all objects should be deleted from the bucket so that the bucket can be destroyed without error."
 }
+
+variable "tags" {
+  type        = "map"
+  default     = {}
+  description = "A mapping of tags to assign to the bucket."
+}

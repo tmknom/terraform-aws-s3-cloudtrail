@@ -7,6 +7,11 @@ variable "name" {
   description = "The name of the bucket, which must comply with DNS naming conventions."
 }
 
+variable "logging_target_bucket" {
+  type        = "string"
+  description = "The name of the bucket that will receive the log objects."
+}
+
 variable "versioning_enabled" {
   default     = true
   type        = "string"

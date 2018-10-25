@@ -18,6 +18,13 @@ resource "aws_s3_bucket" "default" {
   # https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html
   acl = "private"
 
+  # Server access logging provides detailed records for the requests that are made to a bucket.
+  # https://docs.aws.amazon.com/AmazonS3/latest/dev/ServerLogs.html
+  logging {
+    target_bucket = "${var.logging_target_bucket}"
+    target_prefix = "logs/${var.name}/"
+  }
+
   # Versioning is a means of keeping multiple variants of an object in the same bucket.
   # Versioning-enabled buckets enable you to recover objects from accidental deletion or overwrite.
   #

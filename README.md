@@ -122,10 +122,7 @@ terraform-plan-minimal         Run terraform plan examples/minimal
 
 ### Releasing new versions
 
-```shell
-git tag v1.X.X
-git push origin v1.X.X
-```
+Bump VERSION file, and run `make release`.
 
 ### Terraform Module Registry
 

@@ -22,7 +22,7 @@ Provision S3 bucket designed for CloudTrail. This module provides recommended se
 
 ```hcl
 module "s3_cloudtrail" {
-  source                = "git::https://github.com/tmknom/terraform-aws-s3-cloudtrail.git?ref=tags/v1.0.0"
+  source                = "git::https://github.com/tmknom/terraform-aws-s3-cloudtrail.git?ref=tags/1.0.0"
   name                  = "s3-cloudtrail"
   logging_target_bucket = "s3-access-log"
 }
@@ -32,7 +32,7 @@ module "s3_cloudtrail" {
 
 ```hcl
 module "s3_cloudtrail" {
-  source                = "git::https://github.com/tmknom/terraform-aws-s3-cloudtrail.git?ref=tags/v1.0.0"
+  source                = "git::https://github.com/tmknom/terraform-aws-s3-cloudtrail.git?ref=tags/1.0.0"
   name                  = "s3-cloudtrail"
   logging_target_bucket = "s3-access-log"
 

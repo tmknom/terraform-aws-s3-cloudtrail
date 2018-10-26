@@ -1,5 +1,9 @@
 # terraform-aws-s3-cloudtrail
 
+[![CircleCI](https://circleci.com/gh/tmknom/terraform-aws-s3-cloudtrail.svg?style=svg)](https://circleci.com/gh/tmknom/terraform-aws-s3-cloudtrail)
+[![GitHub tag](https://img.shields.io/github/tag/tmknom/terraform-aws-s3-cloudtrail.svg)](https://registry.terraform.io/modules/tmknom/s3-cloudtrail/aws)
+[![License](https://img.shields.io/github/license/tmknom/terraform-aws-s3-cloudtrail.svg)](https://opensource.org/licenses/Apache-2.0)
+
 Terraform module which creates S3 Bucket resources for CloudTrail on AWS.
 
 ## Description
@@ -107,25 +111,25 @@ make install
 ### Makefile targets
 
 ```text
+clean                          Clean .terraform
 docs                           Generate docs
 format                         Format code
 help                           Show help
 install                        Install requirements
 lint                           Lint code
+release                        Release GitHub and Terraform Module Registry
 terraform-apply-complete       Run terraform apply examples/complete
 terraform-apply-minimal        Run terraform apply examples/minimal
 terraform-destroy-complete     Run terraform destroy examples/complete
 terraform-destroy-minimal      Run terraform destroy examples/minimal
 terraform-plan-complete        Run terraform plan examples/complete
 terraform-plan-minimal         Run terraform plan examples/minimal
+upgrade                        Upgrade makefile
 ```
 
 ### Releasing new versions
 
-```shell
-git tag v1.X.X
-git push origin v1.X.X
-```
+Bump VERSION file, and run `make release`.
 
 ### Terraform Module Registry
 

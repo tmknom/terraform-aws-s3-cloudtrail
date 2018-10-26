@@ -2,6 +2,16 @@
 
 Terraform module which creates S3 Bucket resources for CloudTrail on AWS.
 
+## Description
+
+Provision S3 bucket designed for CloudTrail. This module provides recommended settings.
+
+- Enable Access Logging
+- Enable Default Encryption
+- Enable Versioning
+- Enable Lifecycle Configuration
+- Protected from deletion
+
 ## Usage
 
 ### Minimal

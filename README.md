@@ -1,5 +1,9 @@
 # terraform-aws-s3-cloudtrail
 
+[![CircleCI](https://circleci.com/gh/tmknom/terraform-aws-s3-cloudtrail.svg?style=svg)](https://circleci.com/gh/tmknom/terraform-aws-s3-cloudtrail)
+[![GitHub tag](https://img.shields.io/github/tag/tmknom/terraform-aws-s3-cloudtrail.svg)](https://registry.terraform.io/modules/tmknom/s3-cloudtrail/aws)
+[![License](https://img.shields.io/github/license/tmknom/terraform-aws-s3-cloudtrail.svg)](https://opensource.org/licenses/Apache-2.0)
+
 Terraform module which creates S3 Bucket resources for CloudTrail on AWS.
 
 ## Description

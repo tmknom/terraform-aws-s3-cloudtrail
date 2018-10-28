@@ -1,7 +1,3 @@
-# Output Configuration
-#
-# https://www.terrafsorm.io/docs/configuration/outputs.html
-
 output "s3_bucket_id" {
   value = "${module.s3_cloudtrail.s3_bucket_id}"
 }

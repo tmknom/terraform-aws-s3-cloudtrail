@@ -1,6 +1,6 @@
-# Resource Configuration
+# Terraform module which creates S3 Bucket resources for CloudTrail on AWS.
 #
-# https://www.terraform.io/docs/configuration/resources.html
+# https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-create-a-trail-using-the-console-first-time.html
 
 # https://www.terraform.io/docs/providers/aws/r/s3_bucket.html
 resource "aws_s3_bucket" "default" {

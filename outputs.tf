@@ -1,7 +1,3 @@
-# Output Configuration
-#
-# https://www.terraform.io/docs/configuration/outputs.html
-
 output "s3_bucket_id" {
   value       = "${aws_s3_bucket.default.id}"
   description = "The name of the bucket."
